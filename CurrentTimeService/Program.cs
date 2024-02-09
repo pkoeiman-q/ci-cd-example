@@ -10,7 +10,7 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-// GET UTC
+// Comment to allow commit
 app.MapGet("time/utc", () => Results.Ok(DateTime.UtcNow));
 
 await app.RunAsync();
